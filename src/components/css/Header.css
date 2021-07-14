@@ -1,0 +1,23 @@
+header {
+    background:#066591;    /* #074242; #06191f; */
+     color: #FFF;
+     text-align: center;
+     padding: 5px;
+   }
+   header h1 {
+     margin-bottom: 5px;
+   }
+   header nav ul {
+     list-style-type: none;
+   }
+   header nav ul li {
+     display: inline-block;
+     margin: 10px 10px;
+   }
+   header nav ul li a {
+     text-decoration: none;
+     color: #FFF;
+   }
+   header nav ul li a:hover {
+     color: #C4C4C4;
+   }

@@ -9,35 +9,14 @@ body,html,* {
   width: 80%;
   margin: 0 auto;
 }
-header {
- background:#06191f;  /* #074242; */
-  color: #FFF;
-  text-align: center;
-  padding: 5px;
-}
-header h1 {
-  margin-bottom: 5px;
-}
-header nav ul {
-  list-style-type: none;
-}
-header nav ul li {
-  display: inline-block;
-  margin: 10px 10px;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #FFF;
-}
-header nav ul li a:hover {
-  color: #C4C4C4;
-}
+
 
 /* SHOWCASE */
 #showcase {
-  background: url('https://wallpaperaccess.com/thumb/1267580.jpg') center no-repeat;
+  /* https://cdn.wallpapersafari.com/61/97/WOpd04.jpg   https://wallpaperaccess.com/thumb/1267580.jpg */
+  background: url('http://digitalline.ba/wordpress/wp-content/uploads/2018/02/molecular.jpg') center no-repeat;
   background-size: cover;
-  height: 550px;
+  height: 600px;
   color: #FFF;
   text-align: center;
   display: flex;
@@ -92,13 +71,7 @@ header nav ul li a:hover {
 #services .box img:hover {
   opacity: .8;
 }
-/* FOOTER */
-footer {
-  background:#2980B9;   /*  #185B5B;*/
-  text-align: center;
-  color: #FFF;
-  padding: 15px;
-}
+
 
 /* MEDIA QUERIES */
 @media(min-width: 900px){
@@ -207,7 +180,7 @@ footer {
 .line-3 {
   animation: remove-blink 0s 0s step-end forwards,
   typewriter 3s 5.5s steps(40, end) forwards,
-  blink 1s 2.5s step-end infinite;
+  blink 1s 5.5s step-end infinite;
 }
 
 /* // Animations */
