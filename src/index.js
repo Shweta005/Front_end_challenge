@@ -5,7 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
 import Header from './components/Header';
-
+import Contact from './components/Contact';
+import What from './components/What';
+import Install from './components/Install';
 
 
 
@@ -13,8 +15,10 @@ ReactDOM.render(
   <React.StrictMode>
     <Header/>
     <App/>
+    <What/>
+    <Install/>
     <Cards/>
-
+    <Contact/>
     <Footer/>
   </React.StrictMode>,
   document.getElementById('root')

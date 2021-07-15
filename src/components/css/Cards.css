@@ -35,7 +35,36 @@ html {
   line-height: 1.5;
 } */
 
-section {
+.faEthereum{
+  color: #42b7ca;
+}
+.faEthereum:hover {
+ color: #2d2c309f ;
+}
+
+.faPodcast{
+  color: #425fca;
+}
+.faPodcast:hover {
+ color: #15317c ;
+}
+.faFileCode{
+  color: #9c42ca;
+}
+.faFileCode:hover {
+ color: #5b0d6b ;
+}
+.faHandsHelping{
+  color: #71ddf0;
+}
+.faHandsHelping:hover {
+ color: #17abc5 ;
+}
+
+
+
+
+.section {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
@@ -137,11 +166,11 @@ section {
 .service4 i,
 .service4 h4,
 .service4 .cta {
-  color: #850B4B;
+  color: #71ddf0;
 }
 
 .service4:hover {
-  border: 2px solid #850B4B;
+  border: 2px solid #71ddf0;
 }
 
 .service .cta span {

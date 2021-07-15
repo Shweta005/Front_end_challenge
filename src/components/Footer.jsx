@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './css/Footer.css'
+
+
 export default class Footer extends Component {
     render() {
         return (
@@ -7,7 +9,8 @@ export default class Footer extends Component {
                  {/* <!-- FOOTER --> */}
     <footer>
         <p>Copyright &copy; Web.js 2021</p>
-    </footer>
+    </footer> 
+ 
             </div>
         )
     }
