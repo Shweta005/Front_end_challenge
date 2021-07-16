@@ -17,27 +17,27 @@ export default class Cards extends Component {
    <FontAwesomeIcon icon={faEthereum} className="faEthereum" size="5x" ></FontAwesomeIcon>
       {/* <i className="ti-bar-chart"></i> */}
       <h4>web3-eth</h4>
-      <p className="section-lead"> for the ethereum blockchain and smart contracts.</p>
+      <p className="section-lead"> Ethereum Blockchain and Smart Contracts.</p>
       {/* <a href="#" className="cta">Read More <span className="ti-angle-right"/></a> */}
     </div>
 
     <div className="service service2">
     <FontAwesomeIcon icon={faPodcast} className="faPodcast"  size="5x" ></FontAwesomeIcon>
       <h4>web3-shh</h4>
-      <p className="section-lead">  the whisper protocol, to communicate p2p & broadcast.</p>
+      <p className="section-lead"> Whisper Protocol, to Communicate P2P & Broadcast.</p>
       {/* <a href="#" className="cta">Read More <span className="ti-angle-right"/></a> */}
     </div>
 
     <div className="service service3">
     <FontAwesomeIcon icon={faFileCode} className="faFileCode" size="5x" ></FontAwesomeIcon>
       <h4>web3-bzz</h4>
-      <p className="section-lead"> the swarm protocol, the decentralized file storage.</p>
+      <p className="section-lead">The Swarm Protocol, The Decentralized File Storage.</p>
       {/* <a href="#" className="cta">Read more <span className="ti-angle-right"></span></a> */}
     </div>
       <div className="service service4">
       <FontAwesomeIcon icon={faHandsHelping} className="faHandsHelping"  size="5x" ></FontAwesomeIcon>
       <h4>web3-utils</h4>
-      <p className="section-lead">contains useful helper functions for Dapp developers.</p>
+      <p className="section-lead">Contains useful Helper functions for Dapp Developers.</p>
       {/* <a href="#" className="cta">Read more <span className="ti-angle-right"></span></a> */}
     </div>
   </div>

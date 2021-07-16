@@ -4,24 +4,25 @@ export default class Contact extends Component {
     render() {
         return (
             <div>
+              <section id="contact">
 <div className="body">
 <div className="ccontainer">
   <form>
     <ul className="flex-outer">
-      <center><h2 className="h2">Have any Query ?</h2></center>
+      <center><h2 className="h2">Have Any Query ?</h2></center>
       <li>
-        <label htmlFor="first-name">First Name</label>
-        <input type="text" id="first-name" placeholder="Enter your first name here"/>
+        <label htmlFor="first-name">Name</label>
+        <input type="text" id="first-name" placeholder="Enter your Name here" required/>
       </li>
       
       <li>
         <label htmlFor="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email here"/>
+        <input type="email" id="email" placeholder="Enter your Email here" required/>
       </li>
       
       <li>
-        <label htmlFor="message">Message</label>
-        <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+        <label htmlFor="message">Query</label>
+        <textarea rows="6" id="message" placeholder="Enter your Query here"></textarea>
       </li>
      <li>
         <button type="submit">Submit</button>
@@ -141,7 +142,8 @@ export default class Contact extends Component {
   </div>
 
 </div>
-</section> */}
+</section> */} 
+</section>
            </div>
         )
     }

@@ -5,8 +5,8 @@ export default class Install extends Component {
         return (
             <div>
                 <div className="cccontainer">
-                    <center><h3>Want to start a project with Web3</h3></center>
-                    <center><h5>Then first you will need to install web3</h5></center><br/>
+                    <center><h3 className="heading">Start Your Project With Web3.js...</h3></center>
+                    <center><p className="heading" >This can be done using the following methods:</p></center><br/>
                   <div className="row">
     <div className="col-md-4">
       <div className="card card-1">
