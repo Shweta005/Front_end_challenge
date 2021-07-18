@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import logo from '../assets/logo.png'
 import './css/Header.css'
-import Contact from './Contact'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebook,faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons"
 
