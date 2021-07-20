@@ -5,7 +5,7 @@ import {contactAbi} from '../abi/abi';
 import './css/Contact.css'
 
 const web3 = new Web3(Web3.givenProvider);
-const contractAddr = '0xd46C6185C187de8De5FdBCe802B74dFA3a4a5A56';
+const contractAddr = '0x82A6C311e501dCab5e11bed4e0D5e08058AD5Ab3';
 //const contractAddr = '0x90B50b1305708a076a4141B99A3577f8e4A1D152';
 const Contactcontract = new web3.eth.Contract(contactAbi, contractAddr);
 
@@ -20,16 +20,17 @@ function Contact() {
   const account = accounts[0];
  // const gas = await Contactcontract.methods.setData(data).estimateGas();
   //const result = await Contactcontract.methods.setData(data).send({ from: account, gas });
- const gas = await Contactcontract.methods.getData(name,mail,msg).estimateGas();
- const result = await Contactcontract.methods.getData(name,mail,msg).send({ from: account, gas });
+ const gas = await Contactcontract.methods.setData(name,mail,msg).estimateGas();
+ const result = await Contactcontract.methods.setData(name,mail,msg).send({ from: account, gas });
   console.log(result);
 }
-// const handleGet = async (e) => {
-//   e.preventDefault();
-//   const result = await SimpleContract.methods.get().call();
-//   setGetNumber(result);
-//   console.log(result);
-// }
+
+ const handleGet = async (e) => {
+   e.preventDefault();
+   const result = await Contactcontract.methods.getData().call();
+  // setGetNumber(result);
+   console.log(result);
+ }
 
         return (
             <div>
@@ -55,7 +56,7 @@ function Contact() {
     <textarea rows="6" id="message" placeholder="Enter your Query here" value={msg} onSubmit={ e => setData(e.target.value) }     ></textarea> 
       </li>
      <li>
-        <button type="submit"  >Submit</button>
+        <button type="submit" onSubmit ={handleGet}  >Submit</button>
       </li>
     </ul>
   </form>

@@ -30,7 +30,7 @@ function App() {
     <div>
       <h3><b><p className="typewriter__text line-1">Ethereum Javascript API</p></b></h3>
        <h3><b><p className="typewriter__text line-2">Collection of Libraries  </p></b></h3>
-      <h3><b><p className="typewriter__text line-3"> to interact with Ethereum node.</p></b></h3> 
+      <h3><b><p className="typewriter__text line-3"> To interact with Ethereum node.</p></b></h3> 
     </div>
   </section>
         
