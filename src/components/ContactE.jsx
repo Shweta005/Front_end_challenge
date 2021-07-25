@@ -1,26 +1,32 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import './css/Contact.css'
 import emailjs from 'emailjs-com';
-import{ init } from 'emailjs-com';
-init("user_TLn0EJ5mUwgJ14XnheroC");
-export default class ContactE extends Component {
-    handleClick = (e) => {
-        emailjs.sendForm('service_sdkbffc', 'template_kz8v6h9', e.target)
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-       console.log('FAILED...', error);
-    });
-      }
-    
-    render() {
-        
-        return (
-            <div>
-             <section id="contact">
+
+const Result =()=>{
+  return(
+    <p>Your msg has been succesfully sent</p>
+  )
+}
+export default function ContactE(props) {
+  const[result,showResult] = useState(false);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_sdkbffc', 'template_n47w6ar', e.target, 'user_TLn0EJ5mUwgJ14XnheroC')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+      showResult(true);
+  }
+  return (
+    <div>
+       <section id="contact">
                <div className="body">
                <div className="ccontainer">
-         <form onSubmit={this.handleClick} >
+         <form onSubmit={sendEmail} >
     <ul className="flex-outer">
       <center><h2 className="h2">Have Any Query ?</h2></center>
       <li>
@@ -42,13 +48,14 @@ export default class ContactE extends Component {
       </li>
      <li>
         <button type="submit"  value="Send" >Submit</button>
+        
       </li>
+      <li>{result ? <Result/>: null}</li>
+
     </ul>
   </form>
   </div></div>          
 </section>
-        
-            </div>
-        )
-    }
+    </div>
+  )
 }
